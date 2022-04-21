@@ -1,0 +1,39 @@
+xenv:
+ TERM: xterm-256color
+
+window:
+  opacity: 0.6
+# decorations: none
+# start_maximized: true
+  startup_mode: Maximized
+#  title: Alacritty
+#  dynamic_title: true
+
+key_bindings:
+  - { key: V,      mods: Control,                 action: Paste  }
+  - { key: C,      mods: Control, 	  	  action: Copy   }
+  - { key: T,      mods: Control,                 action: SpawnNewInstance      }
+  - { key: F11,    mods: None,                    action: ToggleFullscreen            }
+
+scrolling:
+  history: 1000
+
+#custom_cursor_colors: true
+#colors:
+  #Default colors
+#  primary:
+  #  background: '0xffffff'
+  #  foreground: '0x4d4d4c'
+
+  # Colors the cursor will use if `custom_cursor_colors` is true
+
+#shell:
+#  program: /bin/bash
+#  args:
+#    - -l
+#    - -c
+#    - "tmux attach || tmux"
+
+#font:
+#  size: 10.0
+
