@@ -1,5 +1,5 @@
 cd
-mkdir .vimrc
+touch  .vimrc
 echo "set number" >> .vimrc
 echo "set linebreak" >> .vimrc
 echo "set showmatch" >> .vimrc
