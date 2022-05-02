@@ -7,6 +7,8 @@ echo "set hlsearch" >> .vimrc
 echo "set smartcase" >> .vimrc
 echo "set autowrite" >> .vimrc
 echo "syntax on" >> .vimrc
+echo "set smartindent" >> .vimrc
+echo "set smarttab" >> .vimrc
 
 touch ~/.vimrc.plug
 mkdir ~/vimplug-plugins
