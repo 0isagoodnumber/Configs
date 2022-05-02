@@ -6,3 +6,11 @@ echo "set showmatch" >> .vimrc
 echo "set hlsearch" >> .vimrc
 echo "set smartcase" >> .vimrc
 echo "set autowrite" >> .vimrc
+echo "syntax on" >> .vimrc
+
+touch ~/.vimrc.plug
+mkdir ~/vimplug-plugins
+
+echo " if filereadable(expand("~/.vimrc.plug"))
+     source ~/.vimrc.plug
+ endif" >> .vimrc
