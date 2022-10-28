@@ -1,13 +1,71 @@
-xenv:
- TERM: xterm-256color
+#xenv:
+# TERM: xterm-256color
 
 window:
-  opacity: 0.6
-# decorations: none
-# start_maximized: true
-  startup_mode: Maximized
-#  title: Alacritty
-#  dynamic_title: true
+  opacity: 1
+
+# Font configuration
+font:
+  # Normal (roman) font face
+  normal:
+    # Font family
+    #
+    # Default:
+    #   - (macOS) Menlo
+    #   - (Linux/BSD) monospace
+    #   - (Windows) Consolas
+    family: Source Code Pro
+
+    # The `style` can be specified to pick a specific face.
+    style: Bold
+
+  # Bold font face
+  bold:
+    # Font family
+    #
+    # If the bold family is not specified, it will fall back to the
+    # value specified for the normal font.
+    family: Source Code Pro
+
+    # The `style` can be specified to pick a specific face.
+    style: Bold
+
+  # Italic font face
+  italic:
+    # Font family
+    #
+    # If the italic family is not specified, it will fall back to the
+    # value specified for the normal font.
+    family: Source Code Pro
+
+    # The `style` can be specified to pick a specific face.
+    style: Italic
+
+  # Bold italic font face
+  bold_italic:
+    # Font family
+    #
+    # If the bold italic family is not specified, it will fall back to the
+    # value specified for the normal font.
+    family: Hack
+
+    # The `style` can be specified to pick a specific face.
+    style: Bold Italic
+  
+  offset:
+    x: 0
+    y: 0
+
+  # Glyph offset determines the locations of the glyphs within their cells with
+  # the default being at the bottom. Increasing `x` moves the glyph to the
+  # right, increasing `y` moves the glyph upward.
+  glyph_offset:
+    x: 0
+    y: 0
+  
+  # Point size
+  size: 11.0
+
 
 key_bindings:
   - { key: V,      mods: Control,                 action: Paste  }
@@ -16,24 +74,5 @@ key_bindings:
   - { key: F11,    mods: None,                    action: ToggleFullscreen            }
 
 scrolling:
-  history: 1000
-
-#custom_cursor_colors: true
-#colors:
-  #Default colors
-#  primary:
-  #  background: '0xffffff'
-  #  foreground: '0x4d4d4c'
-
-  # Colors the cursor will use if `custom_cursor_colors` is true
-
-#shell:
-#  program: /bin/bash
-#  args:
-#    - -l
-#    - -c
-#    - "tmux attach || tmux"
-
-#font:
-#  size: 10.0
+  history: 10000
 
