@@ -10,6 +10,23 @@ echo "syntax on" >> .vimrc
 echo "set smartindent" >> .vimrc
 echo "set smarttab" >> .vimrc
 
+echo "
+if $VIMENV == 'talk'
+	set background=light
+	noremap <Space> :n<CR>
+	noremap <Space> :M<CR>
+else
+	hi Normal ctermbg=none
+	hi NonText ctermbg=none
+endif
+
+if $VIMENV == 'prev'
+	noremap <Space> :n<CR>
+	noremap <Backspace> :N<CR>
+	set noswapfile
+endif
+" >> .vimrc
+
 touch ~/.vimrc.plug
 mkdir ~/vimplug-plugins
 
